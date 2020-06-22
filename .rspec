@@ -12,7 +12,18 @@ require_relative'../fizzbuzz.rb'
       it 'returns "Fizz" when the number is divisible by 3' do
         fizz_5 = fizzbuzz(5)
      
-        expect(fizz_3).to eq("Fizz")
+        expect(fizz_15).to eq("Buzz")
       end
     end
-    
+        describe "fizzbuzz" do
+      it 'returns "Fizz" when the number is divisible by 3' do
+        fizz_15 = fizzbuzz(15)
+     
+        expect(fizz_15).to eq("FizzBuzz")
+      end
+    end
+    it 'returns nil when the number is not divisible by 3 or 5' do
+    fizz_4 = fizzBuzz(4)
+    except(fizz_4).to eq(nil)
+    end
+    end
