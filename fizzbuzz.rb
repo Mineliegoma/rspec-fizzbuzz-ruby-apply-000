@@ -1,14 +1,15 @@
 # Don't forget! This file needs to be 'required' in its spec file
 # See README.md for instructions on how to do this
 def fizzbuzz(int)
-  if int==3
-   puts "Fizz"
-   elsif int==5
-    puts "Buzz"
- elsif int==15
- puts "FizzBuzz"
-else int!=15
-return nil
+  if int % 3 == 0
+    "Fizz"
+  elsif int % 5 == 0
+     "Buzz"
+ elsif int % 5 && 3 == 0
+  "FizzBuzz"
+else
+
+nil
     
     
   end
